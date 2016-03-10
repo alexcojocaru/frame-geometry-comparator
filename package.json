@@ -1,0 +1,72 @@
+{
+  "name": "frame-geometry-comparator",
+  "version": "0.1.0-SNAPSHOT",
+  "description": "Calculate how the frame geometry changes when a different fork is installed",
+  "author": "Alex Cojocaru",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexcojocaru/frame-geometry-comparator.git"
+  },
+  "dependencies": {
+      "classnames": "2.2.3",
+      "object-hash": "1.1.2",
+      "react": "0.14.7",
+      "react-dom": "0.14.7"
+  },
+  "devDependencies": {
+    "babel-core": "6.4.0",
+    "babel-eslint": "4.1.8",
+    "babel-jest": "6.0.1",
+    "babel-loader": "6.2.1",
+    "babel-preset-react": "6.3.13",
+    "clean-webpack-plugin": "0.1.3",
+    "eslint": "1.10.3",
+    "eslint-loader": "1.3.0",
+    "eslint-plugin-react": "4.0.0",
+    "extract-text-webpack-plugin": "1.0.1",
+    "file-loader": "0.8.5",
+    "html-webpack-plugin": "2.9.0",
+    "jest-cli": "0.8.2",
+    "node-sass": "3.4.2",
+    "react-hot-loader": "1.3.0",
+    "rimraf": "2.5.2",
+    "sass-loader": "3.1.2",
+    "underscore": "1.8.3",
+    "webpack": "1.12.13",
+    "webpack-babel-jest": "1.0.4",
+    "webpack-dev-server": "1.14.1"
+  },
+  "engines": {
+    "node": ">= 4.2.x",
+    "npm": ">= 3.7.x"
+  },
+  "jest": {
+    "rootDir": "./",
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules"
+    ],
+    "testDirectoryName": "tests",
+    "testFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/node/",
+      "<rootDir>/node_modules/",
+      "<rootDir>/.*/tests/coverage/",
+      "<rootDir>/build/",
+      "<rootDir>/dist/"
+    ]
+  },
+  "scripts": {
+    "build": "webpack -p --progress --colors --config webpack.config.js",
+    "lint": "eslint --ext .js,.jsx .",
+    "test": "jest",
+    "verify": "npm run lint && npm run test",
+    "start": "webpack-dev-server -d --port 8080 --hot --inline --progress --colors --config webpack.dev.config.js",
+    "clean-after": "node ./clean-after.js"
+  }
+}

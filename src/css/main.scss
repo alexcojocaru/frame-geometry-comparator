@@ -1,0 +1,110 @@
+body {
+	font-family: Arial;
+	font-size: 13px;
+}
+
+.mainTitle {
+	font-size: 24px;
+}
+.mainSummary {
+	font-size: 14px;
+	font-style: italic;
+}
+
+.attributeButton {
+	float: left;
+	clear: both;
+	margin-top: 10px;
+}
+
+.attributeGroup {
+	clear: both;
+	display: inline;
+	float: left;
+	padding: 15px 20px;
+	margin: 10px 10px 10px 0;
+}
+.attributeGroupName {
+	font-size: 14px;
+}
+.attribute {
+	float: left;
+	clear: both;
+}
+.invalid {
+	color: red;
+}
+.attributeName {
+	float: left;
+	width: 170px;
+}
+.attributeValue {
+	float: left;
+	width: 100px;
+}
+
+.geometryImage {
+	border: 1px solid black;
+}
+
+.section {
+	margin-top: 20px;
+}
+.section .title {
+	font-weight: bold;
+	font-size: 15px;
+	margin: 20px 0 10px 0;
+}
+.section .summary {
+	font-style: italic;
+	margin: 10px 0;
+}
+
+table.geometryTable {
+}
+/* The text on the header is in bold */
+table.geometryTable thead tr td {
+	font-weight: bold;
+}
+/* All texts in the table are top aligned */
+table.geometryTable tr td {
+	vertical-align: top;
+	padding: 3px 7px;
+}
+/* The text in the header cells is centered, except for the first cell */
+table.geometryTable thead tr td:not(:first-child) {
+	text-align: center;
+}
+/* The first cell on each row in the table body is also in bold */
+table.geometryTable tbody tr td:first-child {
+	font-weight: bold;
+}
+/* darker background color for header cells */
+table.geometryTable thead tr td:not(:first-child) {
+	background-color: #ccc;
+}
+/* inverse colors on the first cell on each row */
+table.geometryTable tr td:first-child {
+	background-color: #666;
+	color: #eee;
+}
+table.geometryTable tr td:first-child.primary {
+	background-color: #d22;
+	color: #eee;
+}
+table.geometryTable tbody tr:nth-child(even) td:not(:first-child) {
+	background-color: #eeddee;
+}
+table.geometryTable thead tr td div.headerFrameSize {
+	text-align: center;
+}
+table.geometryTable thead tr td div.headerDelete {
+	float: right;
+}
+
+.geometryTableNotes {
+	margin-top: 10px;
+	float: left;
+	clear: both;
+	font-style: italic;
+}

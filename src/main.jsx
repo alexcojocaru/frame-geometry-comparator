@@ -726,13 +726,20 @@ var App = React.createClass({
 
         return (
             <div>
-                <p className="mainTitle">Frame geometry comparator</p>
+                <p className="mainTitle">Bicycle frame geometry comparator</p>
                 <p className="mainSummary">
-                    This tool lets you calculate how the frame geometry changes
+                    This tool shows you how the bicycle frame geometry changes
                     with a different lower cup and with a fork having a different length/rake.
                     <br />
                     * The assumption is that the old lower cup height is not known;
                     it is calculated from the stack, reach, headset angle, etc.
+                    <br />
+                    <br />
+                    The source code is available at <a target="_blank" href="https://github.com/alexcojocaru/frame-geometry-comparator">
+                        https://github.com/alexcojocaru/frame-geometry-comparator
+                    </a>.
+                    <br />
+                    For suggestions or issues, contact me via the github project page.
                 </p>
 
                 <div className="section">

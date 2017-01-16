@@ -7,7 +7,7 @@ var Clean = require("clean-webpack-plugin");
 var UglifyJsPlugin = require("webpack").optimize.UglifyJsPlugin;
 var DedupePlugin = require("webpack").optimize.DedupePlugin;
 
-var buildDir = "build";
+var buildDir = "docs";
 
 module.exports = {
     entry: {
@@ -16,7 +16,7 @@ module.exports = {
     output: {
         path: "./" + buildDir,
         filename: "[name].min.js",
-        pathInfo: false,
+        pathInfo: false
     },
     devtool: "source-map",
     module: {
@@ -69,7 +69,7 @@ module.exports = {
     resolve: {
         // I can now require("file") instead of require("file.jsx")
         extensions: ["", ".js", ".json", ".jsx"],
-        modulesDirectories: ["node_modules", "./src"],
+        modulesDirectories: ["node_modules"]
     },
     plugins: [
         new HtmlWebpackPlugin({

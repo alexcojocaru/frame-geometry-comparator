@@ -6,7 +6,19 @@ Calculate how the frame geometry changes when a different fork is installed
 
 Using the application
 -----------------------
-The application is running at http://alexalecu.com/frame-geometry-comparator
+The application is running at 
+https://alexcojocaru.github.io/frame-geometry-comparator/
+
+
+
+Building the application
+------------------------
+You need node installed (v4.2.4 is recommended).
+
+Run
+`npm install && npm run build`
+to build the application in the /docs directory.
+
 
 
 
